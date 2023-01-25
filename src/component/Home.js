@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+// import API_KEY from '../../../imdbsearch/.env'
 
 function Home() {
   const [inputValue, setInputValue] = useState("");
