@@ -14,9 +14,19 @@
 }
 .movieRow {
   display: flex;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.movieRow::-webkit-scrollbar {
+  display: none;
+}
+
+.movieRow.big img {
+  width: 150px;
 }
 
 .movieRow img {
-  width: 150px;
-  margin-right: 15px;
+  width: 100px;
+  margin-right: 10px;
 }

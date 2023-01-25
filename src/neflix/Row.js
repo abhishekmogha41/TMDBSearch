@@ -19,14 +19,14 @@ function Row(props) {
     <>
       <div className="row">
         <h1>{props.heading}</h1>
-        <div className="movieRow">
+        <div className={props.big ? "movieRow big" : "movieRow"}>
           {movies.map((movie, index) => {
             return (
               <img
                 key={index}
                 src={img_base_path + movie.poster_path}
                 alt="title"
-                title={movie.title}
+                title={movie.title || movie.name || movie.original_name}
               />
             );
           })}
