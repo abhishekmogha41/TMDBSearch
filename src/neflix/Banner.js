@@ -31,9 +31,9 @@ function Banner() {
           {bannerMovie.title || bannerMovie.name || bannerMovie.original_name}
         </h1>
         <div className="cta">
-          <a href="">Play</a>
-          <a href="">My List</a>
-          <p>{bannerMovie.overview}</p>
+          <a href="/">Play</a>
+          <a href="/">My List</a>
+          <p>{bannerMovie.overview?.substring(0, 100)}</p>
         </div>
       </div>
     </>
